@@ -1,0 +1,26 @@
+<?php
+
+namespace DummyNamespace;
+
+use DummyFullModelClass;
+
+class DummyClass {
+
+	/**
+	 * The DummyModelClass Instance
+	 * 
+	 * @var \DummyFullModelClass
+	*/
+	protected $DummyModelVariable;
+
+	/**
+	 * 
+     * @param  \DummyFullModelClass  $DummyModelVariable
+     * @return void
+	*/
+	public function __construct(DummyModelClass $DummyModelVariable)
+	{
+		$this->DummyModelVariable = $DummyModelVariable;
+	}
+
+}
