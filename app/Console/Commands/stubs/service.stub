@@ -1,0 +1,28 @@
+<?php
+
+namespace DummyNamespace;
+
+use DummyFullRepositoryClass;
+
+use Illuminate\Http\Request;
+
+class DummyClass {
+
+	/**
+	 * The DummyRepositoryClass Instance
+	 * 
+	 * @var \DummyFullRepositoryClass
+	*/
+	protected $DummyRepositoryVariable;
+
+	/**
+	 * 
+     * @param  \DummyFullRepositoryClass  $DummyRepositoryVariable
+     * @return void
+	*/
+	public function __construct(DummyRepositoryClass $DummyRepositoryVariable)
+	{
+		$this->DummyRepositoryVariable = $DummyRepositoryVariable;
+	}
+
+}
